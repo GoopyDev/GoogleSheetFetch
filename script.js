@@ -17,9 +17,9 @@
 
     // Filas
     data.forEach(row => {
-      table += "<tr>";
+      table += "<tr class='item'>";
       Object.values(row).forEach(val => {
-        table += `<td>${val !== null ? val : ""}</td>`;
+        table += `<td class='product'><div class='photo'>Foto</div><div>${val !== null ? val : ""}</div></td>`;
       });
       table += "</tr>";
     });
